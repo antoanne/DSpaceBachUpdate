@@ -1,0 +1,13 @@
+DONE : 
+    20.500.11997/2099
+
+STEPS:
+
+1) TO EXPORT
+/dspace/bin/dspace export -t COLLECTION -i 20.500.11997/2099 -d /home/antoanne/export -n 1 -m /home/antoanne/export.mapfile
+
+2) TO IMPORT
+/dspace/bin/dspace import -r -e rangel@rb.gov.br -c 20.500.11997/2099 -s /home/antoanne/import.2099 -m import.2099.mapfile -t
+
+3) UPDATE INDEX DISCOVERY
+/dspace/bin/dspace index-discovery
